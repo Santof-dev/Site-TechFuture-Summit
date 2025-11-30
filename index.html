@@ -1,0 +1,89 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+
+    <header>
+        <h1>TechFuture Summit</h1>
+    </header>
+
+    <section id="sobre-evento">
+    <h2>Sobre o Evento</h2>
+    <p><strong >Data:</strong> 15 de agosto de 2025</p>
+    <p><strong >Local:</strong> Centro de Convenções, Salvador - BA</p>
+    <p><strong >Resumo do Tema:</strong> 
+       Discutir tendências em tecnologia e design.
+    </p>
+    </section>
+
+    <div style="text-align: center;">
+        <div id="p1">Palestrantes</div>
+    </div>
+
+    <section id="palestrantes">
+        <div class="card">
+            <img src="joao.jpg.avif" alt="Foto de João">
+            <h3>João Silva</h3>
+            <p>Especialista em Inteligência Artificial com 15 anos de experiência.</p>
+        </div>
+
+        <div class="card">
+             <img src="maria.jpg.avif" alt="Foto de Maria">
+            <h3>Maria Souza</h3>
+            <p>Referência em Desenvolvimento Web e palestrante internacional.</p>
+        </div>
+
+        <div class="card">
+            <img src="lima.jpg.jpg" alt="Foto de Lima">
+            <h3>Carlos Lima</h3>
+            <p>Pesquisador em segurança cibernética e privacidade de dados.</p>
+        </div>
+    </section>
+
+    <section id="Inscricao">
+        <h2>Inscrição:</h2>
+
+        <form action="processa.php" method="POST">
+            <div class="campo">
+                <label for="Nome completo">Nome completo:</label>
+                <input type="text" name="Nome completo" placeholder="Seu nome aqui" id="Nome completo">
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </div>
+    
+            <h2>Ingresso:</h2>
+            <div class="opcoes-ingresso">
+                <label><input type="radio" name="ingresso" value="presencial">Presencial</label>
+                <label><input type="radio" name="ingresso" value="online">Online</label>
+            </div>
+
+            <div class="termos">
+                <label>
+                    <input type="checkbox" id="aceito" name="aceito" required>
+                    Eu li e aceito os <a href="#">termos de uso</a>.
+                </label>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <button type="submit">Enviar inscrição</button>
+            </div>
+        </form>
+
+    </section>
+
+        <footer id="rodape">
+            <p style="text-align: center;">
+                Revisar consentimento | © 2025 TechFuture Summit. Todos os direitos reservados.
+            </p>
+        </footer>
+
+</body>
+</html>
